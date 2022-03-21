@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tabela Piltover</title>
+</head>
+  <body>
+    <h1>Tabela de classificação</h1>
+    <h3>A disputa de Piltover</h3>
+    <div id="adicionarNovoJogador">
+      <input type="text" id="novoNomeJogador" placeholder="Digite o nome"></input>
+      <input type="url" id="novoIconJogador" placeholder="Cole o endereço do icon"></input>
+      <input type=submit id="buttonAdicionar" onclick="novoJogador()" value="Adicione"></input>
+      <h3 id="caixaErro"></h3>
+    </div>
+    <table style="width:100%">
+      <thead>
+        <tr>
+          <th>Icon</th>
+          <th>Nome</th>
+          <th>Vitórias</th>
+          <th>Derrotas</th>
+          <th>Pontos</th>
+          <th colspan="3">Ações</th>
+        </tr>
+      </thead>
+      <tbody id="tabelaJogadores">
+      </tbody>
+    </table>
+    <button id="resetContagem" onclick="resetar()">Resetar tabelas</button>
+    <script src="main.js"></script>
+    </body>
+</html>

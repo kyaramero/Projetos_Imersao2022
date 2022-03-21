@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: linear-gradient(236.85deg, #041832 27.26%, #BC99E9 96.03%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Montserrat', sans-serif;
+  color: #1C1C1C;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.container {
+  background-color: #ECF4FF;
+  box-shadow: 6px 6px 6px #0E1D2F;
+  border-radius: 20px;
+  padding: 40px;
+  margin: auto;
+  min-width: 280px;
+  max-width: 500px;
+  margin-top: 150px;
+}
+
+img {
+  border-radius: 50%;
+  max-height: 7rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile {
+  display: flex;
+}
+
+.title-subtitle {
+  margin-left: 30px;
+}
+
+i {
+  margin-left: 1rem;
+}
+
+i:hover, .theme button:hover {
+  text-shadow: 0 0 10px #041832;
+  color: #ECF4FF;
+}
+
+.theme button {
+  align-self: flex-end;
+  background: #ECF4FF;
+  border: 2px solid #0E1D2F;
+  border-radius: 100px;
+  padding: 8px 16px;  
+}
+
+/* Dark Theme */
+.dark {
+    background: linear-gradient(242.72deg, #0A2A50 0%, #B274B4 98.72%);
+    color: #ECF4FF;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dark .container {
+    background-color: #575454;
+    box-shadow: 6px 6px 6px #0E1D2F;
+    border-radius: 20px;
+}
+
+.dark .title-projects, .dark .li {
+    color: #1C1C1C;
+}
+
+.dark projects {
+    background: linear-gradient(230.65deg, #FD9DFF 27.49%, #7AA7FF 83.19%);
+    box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+    border-radius: 20px;
+}
+
+.dark .theme button {
+    background: #575454;
+    color: #ECF4FF;
+    border: 2px solid #ECF4FF;
+    border-radius: 100px;
+    padding: 8px 16px;  
+}
+.dark i {
+    color: #ECF4FF;
+}
+/*  */
+.projects {
+  background: linear-gradient(230.65deg, #FD9DFF 27.49%, #7AA7FF 83.19%);
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style-type: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.social-media {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title-projects {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+li {
+  position: relative;
+  line-height: 32px;
+  align-items: left;
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ECF4FF;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+li:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+

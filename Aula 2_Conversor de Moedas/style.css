@@ -1,0 +1,24 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    min-height: 400px;
+    background-color: #06d6a0;
+    background-size: auto;
+    background-repeat: no-repeat;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 200px;
+  }
+  
+  #botao-converter {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+  }
+  
+  #botao-converter:hover {
+    color: #ffffff;
+    background-color: #000000;
+  }

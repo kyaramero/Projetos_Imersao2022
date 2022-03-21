@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gotham Trunfo</title>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/083bbf10-4b8c-474e-8b2b-bc4169faf93d/d9zbmwi-e75e7046-202b-4c5c-adb7-d57144aaf9f9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA4M2JiZjEwLTRiOGMtNDc0ZS04YjJiLWJjNDE2OWZhZjkzZFwvZDl6Ym13aS1lNzVlNzA0Ni0yMDJiLTRjNWMtYWRiNy1kNTcxNDRhYWY5ZjkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.hayKT3UkxSJFpYBLToC3ebBGCHIvwavlPAHvuFOaAUk">
+        <h1 class="page-title">Gotham Trunfo</h1>
+        <button onclick="sortearCarta()" id="btnSortear">Sortear carta</button>
+        <form id="form">
+            <h2>Escolha o seu atributo</h2>
+            <div class="wrapper">
+                <div>
+                    <div id="carta-jogador">
+                        <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                    </div>
+                </div>
+                <div>
+                    <div id="carta-maquina" class="carta"><img
+                            src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;"></div>
+                </div>
+            </div>
+            <button class="button-jogar" type="button" id="btnJogar" onclick="jogar()" disabled="false">Jogar</button>
+            <div id="resultado"></div>
+        </form>
+      <button class="button-reiniciar" type="button" id="btnReiniciar" onclick="reiniciar()" disabled="false">Reiniciar o jogo</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

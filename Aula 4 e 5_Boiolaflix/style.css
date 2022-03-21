@@ -1,0 +1,72 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    background-image: url("https://media3.giphy.com/avatars/vlkrr/PUbzWtuUh7JU.gif");
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  
+  .container, #capas {
+    padding: 50px;
+  }
+  
+  .page-title {
+    color: #ffffff;
+    font-size: 40px;
+    margin: 0 0 5px;
+  }
+  
+  .page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+  }
+
+  #capas {
+      overflow: auto;
+  }
+  
+  body > img {
+    margin: 0 10px;
+  }
+  
+  img {
+    max-height: 250px;
+  }
+  
+  img:hover {
+    transform: scale(1.01);
+  }
+
+  #novoLivro {
+      display: inline-block;
+  }
+  
+  /* Botões */
+  .uparLink,
+  .uparImagem,
+  #botaoRemover {
+    border-radius: 10%;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  button:hover {
+    background-color: #cd5c5c;
+    color: #ffffff;
+  }
+  
+  #botaoRemover {
+    position: relative;
+    bottom: 230px;
+    margin: 2px;
+  }
+  
+  /* Erro */
+  
+  span {
+    color: #000000;
+    background: #cd5c5c;
+  }
+  
